@@ -34,7 +34,7 @@ def bye():
 
 @app.route("/username/<name>/<int:number>")
 def greet(name, number):
-    return f'hello there {name}, you are {name} years old'
+    return f'hello there {name}, you are {number} years old'
 
 if __name__ == "__main__":
     app.run(debug=True)
